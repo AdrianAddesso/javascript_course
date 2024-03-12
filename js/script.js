@@ -1,3 +1,4 @@
+console.log("Archivo js correctamente vinculado");
 const firstname = 'Adrian';
 const lastname = 'Addesso';
 let apodo = 'sin definir';
