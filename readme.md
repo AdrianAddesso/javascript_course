@@ -1,4 +1,6 @@
 Hello, welcome to my first Javascript project!
 :tada: !
 
-Cambiar los nombres de las variables const en mayusculas, por convencion
+You can find the excercises at [Script Ejercicios](js\script ejercicios.js)
+
+
