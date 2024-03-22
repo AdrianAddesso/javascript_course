@@ -46,18 +46,14 @@ let currentDate = new Date(); //defino la fecha actual
 let currentYear = currentDate.getFullYear();
      console.log(currentYear);
 
-let Mundiales = (currentYear - FirstCup);  // defino años pasaron desde el primer mundial
-let Resultado = Math.abs(Mundiales);
-     console.log(Math.trunc(Resultado/4)); // defino cuantos mundiales se jugaron a la fecha
-
+let Max = (currentYear - FirstCup)/4;
 let Nacimiento = parseInt(prompt("En qué año naciste?")); // defino el año de nacimiento de la persona
-let Edad = Math.trunc(currentYear-Nacimiento); // defino la edad de la persona
-     console.log(Edad);
-let Vistos = Resultado/Edad
+let Mundiales = (currentYear - Nacimiento)/4;
+     console.log(Math.trunc(Mundiales)); // defino cuantos mundiales se jugaron a la fecha
 
 if(Nacimiento<=FirstCup){
-    alert("Si naciste en "+Nacimiento+" entonces tenes "+Edad+" años, por lo cual desde tu nacimiento se han jugado "+Resultado+" desde entonces");
+    alert("Si naciste en "+Nacimiento+" entonces desde tu nacimiento se han jugado "+Math.trunc(Max)+" Mundiales");
 }else{
-    alert("Si naciste en "+Nacimiento+" entonces tenes "+Edad+" años, por lo cual desde tu nacimiento se han jugado "+Vistos+" desde entonces");
+    alert("Si naciste en "+Nacimiento+" entonces desde tu nacimiento se han jugado "+Math.trunc(Mundiales)+" Mundiales");
 }
 
